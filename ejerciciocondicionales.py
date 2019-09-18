@@ -7,3 +7,9 @@ print("El sueldo del Presidente: " + str(salarioPresidente))
 print("El sueldo del Jefe de area: " + str(salarioJefe))
 print("El sueldo del Empleado: " + str(salarioEmpleado))
 print("El sueldo del Vigilador: " + str(salarioVigilador))
+
+if salarioVigilador<salarioEmpleado<salarioJefe<salarioPresidente:
+    print ("Los salarios son correctos")
+else:
+    print("Algo falla en esta empresa")
+

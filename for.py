@@ -30,4 +30,28 @@ if mail and arroba:
 else:
     print("Es un mail incorrecto")
 
+for i in range(4):
+    print("hola")
+    
+for i in range(4):
+    print(f"El valor de i es {i}")
+    
+for i in range(5,9):
+    print(f"El valo de i es {i}")
+    
+for i in range(5,50,3):
+    print(f"Valor {i}")
+    
+validomail=False
 
+mail=input("Ingrese e-mail")
+
+for i in range(len(mail)):
+    if mail[i] == "@":
+        validomail=True
+
+if validomail:
+    print(f"El mail {mail} es correcto")
+else:
+    print(f"El mail ingresado {mail} es incorrecto")
+        

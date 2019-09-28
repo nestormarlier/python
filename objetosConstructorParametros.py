@@ -9,8 +9,7 @@ class Coche():
         self.__enMarcha=arranquemos
         
         if self.__enMarcha:
-            chequeo=self.chequeoInterno()
-            print(chequeo)
+            chequeo=self.__chequeoInterno()
         
         if self.__enMarcha and chequeo:
             return "El coche se encuentra en marcha"
@@ -23,11 +22,11 @@ class Coche():
         print("El coche tiene",self.__ruedas, "ruedas. Y un largo de",self.__largoChasis, 
               "Un ancho de", self.__anchoChasis,".")
     
-    def chequeoInterno(self):
-        print("Realizando el chequeo del Interno")
+    def __chequeoInterno(self):
+        print("Realizando el chequeo Interno.")
         
         self.gasolina="ok"
-        self.aceite="Nook"
+        self.aceite="ok"
         self.puertas="cerradas"
         
         if(self.gasolina=="ok" and self.aceite=="ok" and self.puertas=="cerradas"):
@@ -48,4 +47,3 @@ print(miCoche2.arrancar(False))
 
 miCoche2.ruedas=2 #No modifica la propiedad de la clase por estar encapsulado
 miCoche2.estado()
-

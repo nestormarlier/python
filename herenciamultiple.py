@@ -24,7 +24,9 @@ class vehiculo():
               "Acelerando: ", self.acelera, "\n" "Frenando: ", self.frena)
         
 class Moto(vehiculo):
-        pass
+        haceWilly=""
+        def hacerWilly(self):
+            hacerWilly="Voy haciendo Willy"
 
 miMoto=Moto("Honda","CBR")
 

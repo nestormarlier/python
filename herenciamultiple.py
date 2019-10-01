@@ -24,11 +24,17 @@ class vehiculo():
               "Acelerando: ", self.acelera, "\n" "Frenando: ", self.frena)
         
 class Moto(vehiculo):
-        haceWilly=""
-        def hacerWilly(self):
-            hacerWilly="Voy haciendo Willy"
+    willy=""
+    def hacerWilly(self):
+        self.willy="Voy haciendo Willy"
+    
+    def estado(self):
+        print("Marca: ", self.marca,"\n" "Modelo: ",self.modelo, "\n" "En marcha: ", self.enmarcha, "\n" 
+          "Acelerando: ", self.acelera, "\n" "Frenando: ", self.frena, "\n" , self.willy)
 
 miMoto=Moto("Honda","CBR")
+
+#miMoto.hacerWilly()
 
 miMoto.estado()
     
